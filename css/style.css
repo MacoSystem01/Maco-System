@@ -1,0 +1,505 @@
+/* 
+    Created on : 6/12/2023, 09:37:34 AM
+    Author     : MACO_System
+*/
+@font-face {
+    font-family: "Segoe UI 8";
+    src: url('../templates/fonts/segoeui.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Segoe UI Semibold 8";
+    src: url('../templates/fonts/seguisb.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Segoe UI Light 8";
+    src: url('../templates/fonts/segoeuil.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Segoe UI Bold 8";
+    src: url('../templates/fonts/segoeuib.ttf') format("truetype");
+}
+@font-face {
+    font-family: "Segoe UI Semilight";
+    src: url('../templates/fonts/segoeuisl.ttf') format("truetype");
+}
+.contenedor{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+header{
+    width: 100%;
+    max-width: 1400px;
+    display: inline-block;    
+    text-align: center;
+}
+.menuImg{
+    width: 40px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 5px 5px 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.logoEmpresa{
+    width: 340px;
+    display: inline-block;
+    vertical-align: top; 
+    margin-top: -60px;
+    text-align: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.logoEmpresa img{
+    width: auto;
+    height: 250px;    
+}
+.sesion{
+    width: calc(100% - 340px);    
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-align: right;
+    font-family: "system-ui";
+    font-size: 16px;
+    color: #444;
+}
+.sesion img{
+    margin-left: 5px;
+    vertical-align: middle;         
+}
+.contenedorRutaApp{
+    width: 100%;
+    height: 35px;
+    margin-top: -30px;
+    text-align: left;
+    font-family: "system-ui";
+    font-size: 18px;
+    color: #fff;
+}
+.nombreAplicacion{
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 10px 5px 10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #1f7de5;
+}
+.arrowImgRight{
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 10px 5px 10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #e5e6e7;
+}
+.opcionSeleccionada{
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 10px 5px 10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #1f7de5;
+}
+
+nav{
+    width: 100%;
+    max-width: 1400px;
+    display: inline-block;
+    text-align: center;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+ul li{
+    padding: 8px 9.2px 8px 1px;
+    display: inline-block;
+    list-style: none;
+}
+ul li:hover{
+    background: #1f7de5;    
+}
+ul li:hover a{
+    color: #fff;
+}
+
+ul li a{
+    text-decoration: none;
+    font-family: "Segoe UI Light 8";
+    font-size: 16px;
+    color: #444;
+}
+ul li img{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+#menu{
+    background: #e5e6e7;
+}
+#subMenuItem{
+    background: #e5e6e7;
+}
+#subMenuItem:hover{
+    background: #1f7de5;
+}
+
+.contenido{
+    width: 100%;
+    max-width: 1200px;    
+    display: inline-block;    
+}
+#contenidoInicio{
+    height: 400px;
+    margin: 0;
+    background: url(../res/contenido_inicio.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#contenidoSubMenu{
+    margin: 100px 0px 100px 0px;
+}
+#contenidoGeneral{
+    margin: 30px 0px 100px 0px;
+    text-align: left;
+}
+#contenidoGeneral2{
+    margin: 30px 0px 0px 0px;
+    text-align: left;
+}
+.encabezadoContenido{
+    width: 100%;
+    display: inline-block;
+    padding: 10px 0px 10px 0px;
+}
+.tituloContenido{
+    width: calc(100% - 350px);
+    display: inline-block;
+    text-align: left;
+}
+.agregarDato{
+    width: 150px;
+    display: inline-block;
+}
+.buscar{
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+}
+.listado p{
+    font-family: "Segoe UI 8";
+    font-size: 16px;
+    color: #1f7de5;
+}
+
+.contenidoCantidadPrecio, .contenidoCantidadPrecioDetail, .fondoNegro, .contenidoRecaudo
+{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+}
+.detallesCantidadPrecio, .detallesCantidadPrecioDetail, .detallesRecaudo{
+    z-index: 10000;
+    position: absolute;
+    background: #FFF;
+    text-align: center;
+    display: none;
+    margin: 0 auto;
+    top:50%;
+    left:50%;
+    width:300px;
+    margin-left:-150px;
+    height:320px;
+    margin-top:-150px;
+    padding:5px;
+    
+}
+.detallesRecaudo{
+    height: 320px;
+}
+
+.promtInventario{
+    z-index: 10000;
+    position: absolute;
+    background: #FFF;
+    text-align: center;
+    display: none;
+    margin: 0 auto;
+    top:50%;
+    left:50%;
+    width:300px;
+    margin-left:-150px;
+    height:350px;
+    margin-top:-150px;
+    padding:5px;    
+}
+
+.promtRemision{
+    z-index: 10000;
+    position: absolute;
+    background: #FFF;
+    text-align: center;
+    display: none;
+    margin: 0 auto;
+    top:50%;
+    left:50%;
+    width:300px;
+    margin-left:-150px;
+    height:500px;
+    margin-top:-250px;
+    padding:5px;    
+}
+
+.promtUtilidad{
+    z-index: 10000;
+    position: absolute;
+    background: #FFF;
+    text-align: center;
+    display: none;
+    margin: 0 auto;
+    top:50%;
+    left:50%;
+    width:300px;
+    margin-left:-150px;
+    height:300px;
+    margin-top:-150px;
+    padding:5px;    
+}
+
+.detallesCantidadPrecio p, .promtInventario p, .promtRemision p, .promtUtilidad p, .detallesCantidadPrecioDetail p, .detallesRecaudo p{
+    font-family: "Segoe UI 8";    
+    font-size: 12px;
+    color: #3593D2;
+}
+
+#pMensaje{
+    color: #DC2727;
+}
+
+footer{
+    width: 100%;
+    max-width: 1200px;
+    display: inline-block;
+}
+.contenedorRutaSoporte{
+    width: 100%;
+    height: 35px;
+    text-align: right;
+    font-family: "Segoe UI 8";
+    font-size: 18px;
+    color: #fff;
+}
+.nombreDesarrollador{
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 10px 5px 10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #1f7de5;
+}
+.arrowImgLeft{
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 10px 5px 10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #e5e6e7;
+}
+.opcionSeleccionadaSoporte{
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 10px 5px 10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #1f7de5;
+}
+.franjaAzul{
+    width: 100%;
+    height: 30px;
+    max-width: 1200px;
+    background: #1f7de5;
+}
+
+
+
+
+input[type="button"], input[type="submit"]{
+    background: #e5e6e7;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    font-family: "Segoe UI Light 8";
+    font-size: 16px;
+    color: #444;
+}
+input[type="button"]:hover, input[type="submit"]:hover{
+    background: #1f7de5;
+    color: #fff;
+}
+input[type="text"], input[type="number"], input[type="password"], input[type="date"]{
+    border: 2px #bbbdbf solid;
+    padding: 2px 10px 2px 10px;
+    font-family: "Segoe UI Light 8";
+    font-size: 16px;
+    color: #444;
+    margin: 10px 10px 10px 0px;
+    text-transform: uppercase;
+}
+#imputUpNone{
+    text-transform: none;
+}
+
+select{
+    border: 2px #bbbdbf solid;
+    padding: 1px 10px 1px 10px;
+    font-family: "Segoe UI Light 8";
+    font-size: 16px;
+    color: #444;
+    margin: 10px 10px 10px 0px;
+}
+
+h1{
+    color: #1f7de5;
+    margin: 0;
+    padding: 0;
+    font-family: "system-ui";
+    font-size: 18px;
+}
+
+table{
+    width: 100%;    
+}
+th{
+    background: #1f7de5;
+    color: #fff;
+    font-family: "Segoe UI Light 8";
+    font-size: 14px;
+    padding: 5px;
+    text-align: center;
+}
+td{
+    font-family: "Segoe UI Semilight";
+    font-size: 14px;
+    padding: 5px;
+}
+
+#trColor{
+    background: #e5e6e7;
+}
+td img{
+    margin: 0px 10px 0px 10px;
+}
+td img:hover{
+    cursor: pointer;
+}
+td{
+    text-align: left;
+}
+tr:hover{
+    background: #ccc;
+}
+#tdColor:hover{
+    background: #ccc;
+}
+.tdDerecha{
+    text-align: right;
+}
+.tdNoVisible{
+    display: none;
+}
+#tdAcciones{
+    text-align: center;
+}
+
+#superContenedorCanvas{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+#contenedorCanvas{
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+#canvas{
+    margin-top: 30px;
+    display: inline-block;
+    text-align: center;
+    width: 450px;
+    height: 600px;
+}
+
+
+@media only screen { } 
+
+@media only screen and (max-width: 426px) {
+    .sesion{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    
+} 
+    
+@media only screen and (min-width: 40.063em) {
+    
+@media only screen and (max-width: 40.063em) {
+    .contenedorRutaApp{
+        height: auto;
+    }
+    .nombreAplicacion, .arrowImgRight, .opcionSeleccionada{
+        margin-bottom: 5px;        
+    }
+} 
+@media only screen and (max-width:640px) {     
+    .tituloContenido{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+    
+}
+
+@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+    
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+@media only screen and (min-width: 120.063em) { } 
+
+}
